@@ -3,181 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zonke Konke Catering</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<title>Service Suspended | Licence Required</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat', sans-serif;}
-    body {line-height:1.6; color:#333; overflow-x:hidden; background:#f9f9f9;}
-    a {text-decoration:none; color:inherit;}
-    img {max-width:100%; height:auto;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
 
-    /* Animations */
-    .fade-up {
-        opacity:0;
-        transform: translateY(40px);
-        transition: all 1s ease-out;
-    }
-    .fade-up.visible {opacity:1; transform: translateY(0);}
-    .zoom:hover {transform: scale(1.05); transition:0.5s;}
-    .icon {margin-right:8px;}
+body{
+    background:#f9f9f9;
+    color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    text-align:center;
+}
 
-    /* Header */
-    header {
-        background: linear-gradient(90deg, #ff416c, #ff4b2b);
-        color:#fff;
-        text-align:center;
-        padding:25px 0;
-        position:relative;
-        box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    }
-    header img.logo {width:120px; border-radius:50%; margin-bottom:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);}
-    header h1 {font-size:2.5rem; margin-bottom:10px;}
-    header p {font-size:1.2rem; color:#fff;}
+.wrapper{
+    max-width:900px;
+    padding:40px 20px;
+}
 
-    nav {display:flex; justify-content:center; gap:25px; margin-top:15px;}
-    nav a {color:#fff; font-weight:600; transition:0.3s; padding:5px 10px; border-radius:5px;}
-    nav a:hover {background:#fff; color:#ff4b2b;}
+header{
+    background:linear-gradient(90deg, #ff416c, #ff4b2b);
+    color:#fff;
+    padding:30px 20px;
+    border-radius:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    margin-bottom:40px;
+}
 
-    section {padding:60px 20px; max-width:1200px; margin:auto;}
-    section h2 {text-align:center; margin-bottom:40px; font-size:2.2rem; color:#ff4b2b;}
+header img{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,.25);
+}
 
-    .services, .products {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:25px;}
-    .card {border-radius:15px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,0.1); background:#fff; transition:0.3s;}
-    .card img {width:100%; object-fit:cover; border-bottom:2px solid #ff4b2b;}
-    .card-content {padding:20px; text-align:center;}
-    .card-content h3 {margin-bottom:12px; color:#ff416c;}
-    .card-content p {font-size:1rem; color:#555;}
+header h1{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
 
-    /* Bigger images for products */
-    #products .card img {height:300px;}
+header p{
+    font-size:1.1rem;
+    opacity:.95;
+}
 
-    /* About Section */
-    #about p {text-align:center; max-width:900px; margin:auto; font-size:1.1rem; line-height:1.8;}
+.notice{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 25px;
+    box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
 
-    /* Contact */
-    .contact {text-align:center;}
-    .contact p {margin-bottom:15px;}
-    .btn {display:inline-block; background:#25D366; color:#fff; padding:12px 25px; border-radius:50px; font-weight:bold; transition:0.3s;}
-    .btn:hover {background:#128C7E;}
-    .social-icons {margin-top:20px;}
-    .social-icons a {color:#3b5998; font-size:2rem; margin:0 10px; transition:0.3s;}
-    .social-icons a:hover {color:#ff4b2b;}
+.notice h2{
+    font-size:2rem;
+    color:#ff4b2b;
+    margin-bottom:20px;
+}
 
-    footer {background:#333; color:#fff; text-align:center; padding:20px 0; font-size:0.9rem;}
+.notice p{
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:30px;
+}
 
-    @media(max-width:768px){
-        nav{flex-direction:column;}
-        .services, .products{grid-template-columns:1fr;}
-    }
+.notice strong{
+    color:#333;
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.btn-whatsapp:hover{
+    background:#128C7E;
+}
+
+footer{
+    margin-top:40px;
+    font-size:.9rem;
+    color:#777;
+}
+
+@media(max-width:600px){
+    header h1{font-size:2rem}
+    .notice h2{font-size:1.7rem}
+}
 </style>
 </head>
-<body>
 
-<!-- Header -->
+<body>
+<div class="wrapper">
+
 <header>
-    <img src="images/6.jpg" alt="Zonke Konke Catering Logo" class="logo fade-up">
-    <h1 class="fade-up">Zonke Konke Catering</h1>
-    <p class="fade-up">Delicious food catering for all events 🎉</p>
-    <nav class="fade-up">
-        <a href="#services"><i class="fas fa-concierge-bell icon"></i>Services</a>
-        <a href="#products"><i class="fas fa-utensils icon"></i>Products</a>
-        <a href="#about"><i class="fas fa-info-circle icon"></i>About</a>
-        <a href="#contact"><i class="fas fa-envelope icon"></i>Contact</a>
-    </nav>
+    <img src="images/6.jpg" alt="Business Logo">
+    <h1>Service Temporarily Suspended</h1>
+    <p>Licence payment required to restore access</p>
 </header>
 
-<!-- Services Section -->
-<section id="services">
-    <h2 class="fade-up">Our Services</h2>
-    <div class="services">
-        <div class="card fade-up zoom">
-            <img src="images/3.jpg" alt="Event Catering">
-            <div class="card-content">
-                <h3>Event Catering 🍽️</h3>
-                <p>Full catering services for weddings, parties, and corporate events.</p>
-            </div>
-        </div>
-        <div class="card fade-up zoom">
-            <img src="images/4.jpg" alt="Private Orders">
-            <div class="card-content">
-                <h3>Private Orders 📝</h3>
-                <p>Customized meal plans for family gatherings and private dinners.</p>
-            </div>
-        </div>
-        <div class="card fade-up zoom">
-            <img src="images/5.jpg" alt="Corporate Catering">
-            <div class="card-content">
-                <h3>Corporate Catering 🏢</h3>
-                <p>Professional catering solutions for offices, conferences, and seminars.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Products Section -->
-<section id="products">
-    <h2 class="fade-up">Our Products</h2>
-    <div class="products">
-        <div class="card fade-up zoom">
-            <img src="images/1.jpg" alt="Buffet">
-            <div class="card-content">
-                <h3>Buffet 🍛</h3>
-                <p>A wide range of dishes for any occasion, beautifully presented.</p>
-            </div>
-        </div>
-        <div class="card fade-up zoom">
-            <img src="images/2.jpg" alt="Platters">
-            <div class="card-content">
-                <h3>Platters 🥗</h3>
-                <p>Customized platters with appetizers, snacks, and desserts.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about">
-    <h2 class="fade-up">About Us</h2>
-    <p class="fade-up">
-        🍽️ We're dedicated to serving <strong>delicious food</strong>, providing <strong>outstanding services</strong>, and giving <strong>unparalleled attention to detail</strong>.<br><br>
-        📝 We'll work with you to create a <strong>customized menu</strong> that reflects your vision and satisfies your taste.<br><br>
-        🌱 Our services include <strong>special dietary options</strong>, 🍸 cocktail and starter options, and fully <strong>personalized menus</strong> for every event.<br><br>
-        🎉 Whether it's a small gathering or a large celebration, we ensure your event is unforgettable!
+<div class="notice">
+    <h2>Unpaid Licence Notice</h2>
+    <p>
+        This website has been <strong>temporarily suspended</strong> due to an
+        <strong>unpaid service licence</strong>.<br><br>
+        To regain access and restore full functionality, the business owner must
+        contact <strong>Sentinel Nexus Systems</strong> for service reactivation.
     </p>
-</section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2 class="fade-up">Contact Us</h2>
-    <div class="contact fade-up">
-        <p>Phone: +263 784 240 506</p>
-        <a href="https://wa.me/263784240506" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        </div>
+    <p>
+        Reactivation is subject to licence verification and confirmation of payment.
+        Once resolved, access to the Sentinel X Marketplace and hosted services
+        will be reinstated.
+    </p>
+
+    <div class="actions">
+        <a 
+          class="btn btn-whatsapp"
+          target="_blank"
+          href="https://wa.me/263787556929?text=Hello%20Sentinel%20Nexus%20Systems,%20I%20am%20requesting%20re-invitation%20to%20the%20Sentinel%20X%20Marketplace.%20Payment%20is%20ready%20to%20be%20made.%20Please%20advise%20on%20reactivation."
+        >
+            <i class="fab fa-whatsapp"></i>
+            Request Reactivation
+        </a>
     </div>
-</section>
+</div>
 
-<!-- Footer -->
 <footer>
-    <p>&copy; 2025 Zonke Konke Catering | Designed with ❤️</p>
+    © 2025 Sentinel Nexus Systems PBC · Service Control Notice
 </footer>
 
-<script>
-    // Animate on scroll
-    const faders = document.querySelectorAll('.fade-up');
-    const appearOptions = {threshold:0.1, rootMargin:"0px 0px -50px 0px"};
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) return;
-            entry.target.classList.add('visible');
-            appearOnScroll.unobserve(entry.target);
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => {appearOnScroll.observe(fader)});
-</script>
-
+</div>
 </body>
 </html>
